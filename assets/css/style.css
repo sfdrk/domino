@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-image: url("../images/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden !important;
+}
+
+main .right-arrow {
+  position: absolute;
+  right: 0;
+  margin-right: -10rem;
+  top: -7em;
+}
+
+main .right-arrow img {
+  max-width: 389px;
+  width: 100%;
+  max-height: 359px;
+  height: auto;
+}
+
+main .top-triangle {
+  position: absolute;
+  margin-top: -12em;
+  margin-left: 12em;
+}
+
+main .top-triangle img {
+  max-width: 336px;
+  width: 100%;
+  max-height: 336px;
+  height: auto;
+}
+
+main .left-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+main .triangle-bottom-center {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -10em;
+  margin-left: 16em;
+}
+
+main .right-triangle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -18em;
+  margin-right: -8em;
+}
+
+main .hero-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .hero-container .hero-block {
+  display: flex;
+  position: relative;
+}
+
+main .hero-container .hero-block .hero-heading {
+  font-size: calc(55px + (140 - 55) * ((100vw - 300px) / (2080 - 426)));
+  line-height: calc(65px + (140 - 65) * ((100vw - 300px) / (2080 - 426)));
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1620px) {
+  main .right-arrow {
+    margin-right: -7rem;
+    top: -5em;
+  }
+  main .right-arrow img {
+    width: 300px;
+  }
+  main .left-arrow img {
+    height: 200px;
+  }
+  main .hero-block .hero-img-block img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main .top-triangle {
+    left: 0;
+    margin-top: -5em;
+    margin-left: -8em;
+  }
+  main .top-triangle img {
+    width: 280px;
+  }
+  main .right-triangle {
+    margin-bottom: -10em;
+    margin-right: -3em;
+  }
+  main .right-triangle img {
+    width: 280px;
+  }
+  main .hero-container .hero-block {
+    flex-direction: column;
+  }
+  main .hero-container .hero-block .hero-heading {
+    justify-content: center;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+  main .hero-container .hero-block .hero-img-block {
+    display: flex;
+    justify-content: center;
+  }
+  main .hero-container .hero-block .hero-img-block img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main .right-arrow {
+    margin-right: -3em;
+    top: -2em;
+  }
+  main .right-arrow img {
+    width: 120px;
+    height: 120px;
+  }
+  main .left-arrow img {
+    height: 85px;
+  }
+  main .right-triangle img {
+    width: 185px;
+    height: 257px;
+  }
+  main .triangle-bottom-center {
+    margin-bottom: 66%;
+    margin-left: -8em;
+    left: 0;
+  }
+  main .triangle-bottom-center img {
+    height: 193px;
+  }
+  main .top-triangle img {
+    width: 238px;
+  }
+  main .hero-container {
+    display: block;
+  }
+  main .hero-container .hero-heading {
+    padding-top: 137px;
+    padding-bottom: 100px;
+  }
+}
